@@ -1,8 +1,8 @@
 const Header = () => {
     return (
         <header className="flex px-8 py-4 justify-between items-center">
-            <span className="text-2xl font-bold">HAIVA</span>
-            <nav className="flex gap-6 items-center">
+            <span className="text-2xl font-bold mr-4">HAIVA</span>
+            <nav className="flex gap-6 items-center md:hidden">
                 <ul className="flex gap-4">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Plugins</a></li>

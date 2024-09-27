@@ -28,18 +28,22 @@ a {
 
 body {
   margin: 0;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 100dvh;
 }
 
-body > main {
+#root {
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  @apply bg-dashboard-gradient;
+}
+#root > main {
   flex: 1;
 }
 
-body > * {
+#root > * {
   width: 100%;
 }
 
@@ -69,9 +73,8 @@ li {
   @apply border-primary bg-dashboard-dark opacity-70;
 }
 
-
 .bg-playbar {
-  background-color: #517D98;
+  background-color: #517d98;
 }
 
 .bg-playbar-dark {

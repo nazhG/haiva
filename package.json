@@ -12,7 +12,6 @@
   "devDependencies": {
     "vite": "^5.4.1"
   },
-  "main": "main.js",
   "keywords": [],
   "author": "nazhG",
   "license": "ISC",
