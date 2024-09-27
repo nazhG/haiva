@@ -3,7 +3,7 @@ import FileIcon from '../assets/fileIcon.jsx';
 import Loader from './loader.jsx';
 import ProcessedFile from './processedFile.jsx';
 
-const DragAndDrop = () => {
+const Dashboard = () => {
     const [dropZoneOver, setDropZoneOver] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [file, setFile] = useState(null);
@@ -44,7 +44,7 @@ const DragAndDrop = () => {
                 <p className="w-[30%] sm:w-3/4 text-xs text-shadow">At <span className="font-bold">innerecho</span>, we are merging compassionate
                     care with cutting-edge AI to empower mental health
                     professionals.</p>
-                <button className="text-xs py-3 px-9 border rounded border-gray-900 bg-white text-gray-950 mt-4">Learn more</button>
+                <button className="text-xs py-3 px-9 border rounded bg-white hover:bg-gray-50 text-gray-900 mt-4 border-gray-800 hover:border-gray-950 transition duration-300 hover:shadow-lg hover:text-gray-950">Learn more</button>
             </section>
             <section className="flex flex-1 flex-col text-center items-center pb-10 sm:pb-4 px-14 sm:px-6">
                 {
@@ -96,4 +96,4 @@ const DragAndDrop = () => {
     );
 }
 
-export default DragAndDrop;
+export default Dashboard;

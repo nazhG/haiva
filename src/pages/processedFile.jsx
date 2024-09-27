@@ -22,20 +22,29 @@ const ProcessedFile = () =>
     <p className="text-primary font-bold self-start mb-4 text-xl">Recording</p>
     <div className="rounded-full bg-playbar-dark h-8 w-full overflow-hidden mb-4">
         <div className="h-full w-[62.5%] bg-playbar text-right text-white text-xs pr-2 content-center pt-[2px]">
-            <span className="opacity-75">
-
-            42:02
+            <span className="opacity-75 font-extralight">
+                42:02
             </span>
         </div>
     </div>
     <div className="flex justify-between w-full">
         <span className="text-gray-500 text-sm">00:00</span>
         <div className="flex gap-2 items-center">
-            <NextIcon className="cursor-pointer scale-x-[-1]" />
-            <FastForwardIcon className="cursor-pointer scale-x-[-1]" />
-            <PlayIcon className="cursor-pointer" />
-            <FastForwardIcon className="cursor-pointer" />
-            <NextIcon className="cursor-pointer" />
+            <div className="rounded-full hover:bg-slate-400 hover:bg-opacity-10 p-[5px]">
+                <NextIcon className="cursor-pointer scale-x-[-1] antialiased" />
+            </div>
+            <div className="rounded-full hover:bg-slate-400 hover:bg-opacity-10 p-[5px]">
+                <FastForwardIcon className="cursor-pointer scale-x-[-1] antialiased" />
+            </div>
+            <div className="rounded-full hover:bg-slate-400 hover:bg-opacity-10 p-[5px]">
+                <PlayIcon className="cursor-pointer antialiased" />
+            </div>
+            <div className="rounded-full hover:bg-slate-400 hover:bg-opacity-10 p-[5px]">
+                <FastForwardIcon className="cursor-pointer antialiased" />
+            </div>
+            <div className="rounded-full hover:bg-slate-400 hover:bg-opacity-10 p-[5px]">
+                <NextIcon className="cursor-pointer antialiased" />
+            </div>
         </div>
         <span className="text-gray-500 text-sm">58:45</span>
     </div>

@@ -81,6 +81,20 @@ li {
   background-color: #101828;
 }
 
+a {
+  @apply relative;
+}
+
+a::after {
+content: "";
+@apply absolute left-0 -bottom-1 w-full h-[2px] bg-primary scale-x-0 transition-transform duration-300 ease-in-out opacity-80;
+}
+
+a:hover::after {
+@apply scale-x-100;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
