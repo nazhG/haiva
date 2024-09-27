@@ -70,10 +70,15 @@ const DragAndDrop = () => {
                                             (
                                                 <>
                                                     <FileIcon />
-                                                    <input type="file" id="file-input" className="hidden" ref={fileInput} />
+                                                    <input 
+                                                        onChange={(e) => handleFiles(e.target.files)}
+                                                        type="file" 
+                                                        id="file-input" 
+                                                        className="hidden" 
+                                                        ref={fileInput} />
                                                     <span className="text-xs text-secondary">or drag and drop</span>
                                                     <label htmlFor="file"
-                                                        className="text-sm py-3 px-10 rounded bg-primary text-white cursor-pointer transition-all duration-500 hover:scale-105"
+                                                        className="text-sm py-3 px-10 rounded bg-primary text-white cursor-pointer transition-all duration-500 transform-gpu will-change-transform hover:scale-105"
                                                         onClick={() => fileInput.current.click()}>
                                                         Select Files
                                                         </label>
