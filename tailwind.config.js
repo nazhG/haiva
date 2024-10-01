@@ -1,6 +1,6 @@
 // tailwind.config.js
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Ajusta las rutas según tu estructura de proyecto
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       screens: {
@@ -8,11 +8,16 @@ export default {
         md: { max: '645px' },
       },
       colors: {
-        primary: '#375F80',
+        primary: '#517D98',
         secondary: '#545454',
+        dark: '#375F80',
+        light: '#84A3B6',
+        lighter: '#EAF6F8',
+        lightest: '#EAF0F2',
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'], // Define Poppins como una fuente personalizada
+        poppins: ['Poppins', 'sans-serif'],
+        russo: ['Russo One', 'sans-serif'],
       },
     },
   },

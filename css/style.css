@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -37,7 +38,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  @apply bg-dashboard-gradient;
 }
 #root > main {
   flex: 1;
@@ -55,6 +55,10 @@ li {
   background-image: url("https://s3-alpha-sig.figma.com/img/a7ad/d563/1a1296588a7a290a58e8b7fe704a1bd4?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AM0ZANrO4U3y7UFk2j4u-d0qKvnDGNbJcBowjbpftiJBDOATyKJGyNhSy8iuVZuL93ETmhPuoqZjlLJ55YkFLpryslhpd0VfDq8vR-RSh0Hhg8967N~xI94etZQ4y1RZRaeBQ-qEwWk2cAMwqm7SH0oZobnZP5wuYTDIwh7QyfclmE4c-DkHC9QzPVfdEfB5uzk6eQbXZDttqhEa1cj~3lSIf5RRk0aCN3daduYZ7QLorpfGg18hs1YFDCl0DfSZl9kDrBWlIzkl4VkNUT3w7IFxPlegpCybbGbSGotEHuou2KWm-lygJtRrm-1Qj5AJVabdYIb28tcRTXjmKPcTYQ__");
   background-size: cover;
   background-position: center;
+}
+
+.bg-under-banner-gradient {
+  background: linear-gradient(90.31deg, #84A3B6 0.02%, #375F80 99.73%);
 }
 
 .text-shadow {
@@ -92,6 +96,11 @@ content: "";
 
 a:hover::after {
 @apply scale-x-100;
+}
+
+.list-disc li {
+  list-style-type: disc;
+  margin-left: 1.15rem;
 }
 
 
