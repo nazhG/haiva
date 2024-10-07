@@ -103,6 +103,14 @@ a:hover::after {
   margin-left: 1.15rem;
 }
 
+.btn {
+  @apply  px-12 py-4 rounded
+}
+
+.tittle {
+  @apply font-medium text-dark opacity-90 text-4xl;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
