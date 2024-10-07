@@ -7,7 +7,7 @@ const About = () => {
             <br />
             <section className="flex flex-col items-center">
                 <div className="px-12 text-center">
-                    <h2 className="font-semibold text-5xl mb-2">Welcome to haiva Project</h2>
+                    <h2 className="font-semibold text-5xl mb-2 mt-12">Welcome to haiva Project</h2>
                     <p className="text-dark text-sm mb-12">Enhancing human connection and therapeutic outcomes through advanced AI</p>
                     <p className="mb-8">haiva is an open-source, microservices-oriented platform designed to empower mental health professionals with AI-driven tools and decentralized data model.</p>
                     <p className="mb-14">It streamlines workflows, provides deeper patient insights, and enables personalized treatment plans.</p>
@@ -52,7 +52,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f4f4f4] px-14 py-8 text-center">
+                <div className="bg-[#f4f4f4] px-32 py-8 text-center">
                     <h2 className="tittle mb-14">Key Features and Capabilities</h2>
                     <div className="grid grid-cols-3 gap-8 mb-12">
                         <div className="flex flex-col items-center text-center">
@@ -398,7 +398,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                        <h2 className="tittle mb-6">Future Roadmap</h2>
+                        <h2 className="tittle mb-6 mt-8 text-center">Future Roadmap</h2>
                         <div className="bg-[#F2F2F2]">
                             <p className="font-semibold">
                                 Enhanced AI Capabilities:
