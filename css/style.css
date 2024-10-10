@@ -124,3 +124,66 @@ a:hover::after {
     background-color: #f9f9f9;
   }
 }
+
+/** AUDIO PLAYER **/
+
+.rhap_container {
+  height: 80px; /* Ajusta la altura */
+  font-size: 18px; /* Aumenta el tamaño del texto */
+}
+
+.rhap_progress-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rhap_progress-indicator {
+  width: 15px;
+  height: 15px;
+}
+
+.rhap_current-time, .rhap_total-time {
+  font-size: 32px; /* Ajusta el tamaño del texto del tiempo */
+}
+
+.rhap_progress-filled {
+  background-color: #007bff; /* Color de la barra de progreso */
+}
+
+.rhap_additional-controls, .rhap_volume-controls {
+  @apply hidden;
+}
+
+.rhap_controls-section {
+  @apply justify-center;
+}
+
+.rhap_container {
+  @apply bg-transparent border-0 shadow-none;
+}
+
+.rhap_time {
+  @apply text-sm;
+}
+
+.rhap_progress-bar, .rhap_download-progress {
+  border-radius: 30px;
+  background-color: #101828;
+  height: 24px;
+  overflow: hidden;
+}
+
+.rhap_progress-filled {
+  border-radius: 30px;
+  background-color: #517d98;
+}
+
+.rhap_progress-indicator {
+  @apply hidden;
+}
+
+.rhap_button-clear {
+  /** quitamos el borde que sale cuando se hace click en el boton */
+  outline: none;
+}
